@@ -4,8 +4,10 @@ ENV PYTHONUNBUFFERED 1
 
 RUN mkdir /capstone
 
+COPY requirements.txt /capstone/
+
 WORKDIR /capstone
 
-COPY . /capstone/
-
 RUN pip install -r requirements.txt
+
+COPY . /capstone/
