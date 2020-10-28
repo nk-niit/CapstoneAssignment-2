@@ -14,7 +14,7 @@ services:
   db:
     image: postgres
     volumes:
-      - ../database:/var/lib/postgresql/data
+      - /mnt/d/Programming/Web\ Frameworks/Django/Docker/Capstone-A2/database:/capstone
     environment:
       - POSTGRES_DB=capstone
       - POSTGRES_USER=postgres
