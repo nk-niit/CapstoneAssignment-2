@@ -13,3 +13,7 @@ services:
       - db
   db:
     image: postgres
+    environment:
+      - POSTGRES_DB=capstone
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=admin
