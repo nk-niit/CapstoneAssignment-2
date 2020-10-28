@@ -78,10 +78,11 @@ WSGI_APPLICATION = 'assignment.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'capstone',
+        'NAME': 'postgres',
         'USER': 'postgres',
+        'PASSWORD': 'postgres',
         'HOST': 'db',
-        'PORT': '5432'
+        'PORT': 5432
     }
 }
 
