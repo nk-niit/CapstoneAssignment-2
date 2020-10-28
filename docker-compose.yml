@@ -13,12 +13,7 @@ services:
       - db
   db:
     image: postgres
-    volumes:
-      - database:/var/lib/postgresql/data
     environment:
       - POSTGRES_DB=capstone
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=admin
-
-volumes:
-  database:
