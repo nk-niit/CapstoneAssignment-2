@@ -6,7 +6,7 @@ services:
     command: python manage.py runserver 0.0.0.0:8000
     container_name: capstone_webapp
     volumes:
-      - "/mnt/d/Programming/Web Frameworks/Django/Docker/Capstone-A2/assignment":/capstone
+      - /mnt/d/Programming/Web\ Frameworks/Django/Docker/Capstone-A2/assignment:/capstone
     ports:
       - "8000:8000"
     depends_on:
@@ -14,7 +14,7 @@ services:
   db:
     image: postgres
     volumes:
-      - "/mnt/d/Programming/Web Frameworks/Django/Docker/Capstone-A2/database":/var/lib/postgresql/data
+      - /mnt/d/Programming/Web\ Frameworks/Django/Docker/Capstone-A2/database:/var/lib/postgresql/data
     environment:
       - POSTGRES_DB=capstone
       - POSTGRES_USER=postgres
