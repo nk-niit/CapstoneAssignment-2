@@ -6,7 +6,7 @@ services:
     command: python manage.py runserver 0.0.0.0:8000
     container_name: capstone_webapp
     volumes:
-      - webapp_volume:/capstone
+      - .:/capstone
     ports:
       - "8000:8000"
     depends_on:
@@ -21,5 +21,4 @@ services:
       - POSTGRES_PASSWORD=admin
 
 volumes:
-  webapp_volume:
   db_volume:
